@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Ensure PATH_TO_FX is set, or prompt the user to set it
+if [ -z "$PATH_TO_FX" ]; then
+  echo "Error: PATH_TO_FX is not set. Please set PATH_TO_FX to the JavaFX SDK path."
+  exit 1
+fi
+
+# Compile the Java source files
+echo -n "Compiling the project... "
+javac --module-path "$PATH_TO_FX" --add-modules javafx.controls,javafx.fxml -d out $(find src -name "*.java")
+if [ $? -ne 0 ]; then
+  echo "failed."
+  exit 1
+fi
+echo "done!"
+
+# Run the application
+echo "Running the application..."
+java --module-path "$PATH_TO_FX" --add-modules javafx.controls,javafx.fxml -cp out BoggleGUI
+
+# Exit message
+if [ $? -eq 0 ]; then
+  echo "Program exited normally (user closed the GUI)."
+else
+  echo "Program exited with an error."
+fi
