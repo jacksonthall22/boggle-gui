@@ -47,7 +47,7 @@ public class BoggleGUI extends Application implements EventHandler<MouseEvent> {
 
     private final int[] DEFAULT_WINDOW_DIMENSIONS = {1040, 650};
     private final String DEFAULT_WORDS_BODY_TEXT = "No words yet!";
-    private static final double DEFAULT_COUNTDOWN_TIME = 5;
+    private static final double DEFAULT_COUNTDOWN_TIME = 60;
     private static final double DEFAULT_GRACE_PERIOD = 0.5;
 
 
