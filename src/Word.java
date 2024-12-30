@@ -42,7 +42,7 @@ public class Word {
      * @return number of scoring points for this word
      */
     public int getPoints(){
-        return Math.max(0, word.length() - 3);
+        return Math.max(0, word.length() - 2);
     }
 
     /**
