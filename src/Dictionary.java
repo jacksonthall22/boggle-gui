@@ -39,7 +39,7 @@ public class Dictionary {
             // If above code works, set the Trie for this Dictionary
             setTrie();
         } catch (FileNotFoundException e){
-            System.out.println("ERROR: File could not be loaded.");
+            System.out.println("ERROR: File '" + filename + "' could not be loaded.");
         } finally {
             if (fileScanner != null)
                 fileScanner.close();
