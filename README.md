@@ -2,8 +2,6 @@
 
 A Boggle GUI built with JavaFX, and a recursive backgracking algorithm using a [Trie data structure](https://en.wikipedia.org/wiki/Trie) to find the best words you missed!
 
-![Playing screen](images/playing.png)
-
 ![Game over screen](images/game-over.png)
 
 # Clone and run!
