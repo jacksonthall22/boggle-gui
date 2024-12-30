@@ -19,3 +19,6 @@ export PATH_TO_FX="C:\Program Files\Java\javafx-sdk-18.0.2\lib"  # Replace with 
 play.bat  # Windows
 ```
 
+# How to play
+
+When the game starts, start typing or click tiles on the board to spell words, and hit `Enter` to submit!
