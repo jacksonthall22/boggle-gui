@@ -186,7 +186,7 @@ public class BoggleGUI extends Application implements EventHandler<MouseEvent> {
                 "-fx-font-family: 'Courier New';" +
                 "-fx-font-size: 14;"
         );
-        time = new Label("Time: 90");
+        time = new Label(String.format("Time: %.0f", DEFAULT_COUNTDOWN_TIME));
         time.setStyle(
                 "-fx-font-family: Verdana;" +
                 "-fx-font-size: 20;" +
