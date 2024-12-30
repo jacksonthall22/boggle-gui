@@ -42,23 +42,7 @@ public class Word {
      * @return number of scoring points for this word
      */
     public int getPoints(){
-        int score;
-        int l = word.length();
-
-        if (l < 3)
-            score = 0;
-        else if (l == 3 || l == 4)
-            score = 1;
-        else if (l == 5)
-            score = 2;
-        else if (l == 6)
-            score = 3;
-        else if (l == 7)
-            score = 5;
-        else
-            score = 11;
-
-        return score;
+        return Math.max(0, word.length() - 3);
     }
 
     /**
